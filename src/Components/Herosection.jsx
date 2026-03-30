@@ -26,7 +26,7 @@ const Herosection = () => {
                     </div>
 
                     <h1 className="text-black text-5xl font-bold leading-tight">
-                        Supercharge Your <br /> Digital Workflow
+                        Supercharge Your <br />  <span className="text-purple-600">Digital Workflow</span>
                     </h1>
                     
                     <p className="py-6 text-gray-600  max-w-lg">

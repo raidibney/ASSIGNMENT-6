@@ -1,6 +1,6 @@
-import React from 'react';
+
 import userIconPng from '../assets/user.png';
-import rocket from '../assets/rocket.png';
+import rocket from '../assets/rocket.png'
 import boxIconPng from '../assets/package.png';
 
 const Getstarted = () => {
@@ -27,13 +27,13 @@ const Getstarted = () => {
             title: "Start Creating",
             description: "Download and start using your premium tools immediately.",
             icon: (
-                 <img src={rocket}></img>
+                 <img src={ rocket }></img>
             ),
         },
     ];
 
     return (
-        <section className="bg-white py-24 px-4 relative overflow-hidden w-11/12 mx-auto">
+        <section className="bg-gray-100 py-24 px-4 relative overflow-hidden w-11/12 mx-auto">
             
             {/* Top part of the  Section */}
             <div className="text-center mb-16 relative">

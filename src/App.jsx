@@ -6,6 +6,7 @@ import Herosection from './Components/Herosection'
 import Navbar from './Components/Navbar'
 import Rating from './Components/Rating'
 import Ready from './Components/Ready'
+import Transparentpricing from './Components/Transparentpricing'
 
 import './index.css'
 
@@ -14,11 +15,11 @@ function App() {
 
   return (
     <>
-
       <Navbar></Navbar>
       <Herosection></Herosection>
       <Rating></Rating>
       <Getstarted></Getstarted>
+      <Transparentpricing></Transparentpricing>
       <Ready></Ready>
       <Footer></Footer>
      
