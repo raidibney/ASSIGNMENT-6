@@ -1,7 +1,7 @@
 import React from 'react';
 import cartImage from '../assets/products/shopping-cart.png';
 
-const Navbar = () => {
+const Navbar = ({ cartCount }) => {
     return (
        <div className="navbar  shadow-sm w-11/12 mx-auto bg-white">
   <div className="navbar-start">
@@ -35,7 +35,17 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <img src={cartImage} alt="Shopping Cart" className='mr-7'/>
+    {/* 2. Cart Icon with Badge Container */}
+                <div className="relative mr-7">
+                    <img src={cartImage} alt="Shopping Cart" className='w-6 h-6' />
+                    
+                    {/* 3. Conditional Badge: Only show if count > 0 */}
+                    {cartCount > 0 && (
+                        <span className="absolute -top-2 -right-2 bg-blue-600 text-white text-[10px] font-bold h-5 w-5 flex items-center justify-center rounded-full border-2 border-white">
+                            {cartCount}
+                        </span>
+                    )}
+                </div>
     <a className='mr-7 text-black'>Login</a>
     <a className="btn btn-primary text-white rounded-3xl ">Get Started</a>
   </div>

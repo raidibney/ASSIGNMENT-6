@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "warning",
+    "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
+    "icon": "📝"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media and marketing materials.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "info",
+    "features": ["Monthly updates", "Commercial license", "High-res exports"],
+    "icon": "🎨"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos, videos, and graphics.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "success",
+    "features": ["10M+ assets", "Commercial use", "No attribution"],
+    "icon": "📷"
+  },
+  {
+    "id": 4,
+    "name": "SEO Booster Tool",
+    "description": "Rank higher on Google with our advanced keyword research tool.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "Hot",
+    "tagType": "error",
+    "features": ["Keyword tracking", "Backlink audit", "Competitor analysis"],
+    "icon": "🚀"
+  }
+]

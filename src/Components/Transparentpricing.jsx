@@ -4,11 +4,11 @@ const Transparentpricing = () => {
     const plans = [
         {
             name: "Starter",
-            price: "0",
+            price: "10",
             description: "Perfect for getting started",
             buttonText: "Get Started Free",
             highlighted: false,
-            features: ["Access to 10 free tools", "Basic templates", "Community support", "1 project per month"]
+            features: ["Access to 10 free tools", "Basic templates", "Community support", "1 project per month","good to start with","limited access to features"]
         },
         {
             name: "Pro",
