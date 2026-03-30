@@ -40,3 +40,7 @@ Success Alerts: When an item is added or checkout is completed.
 Error Alerts: When items are removed from the cart.
 
 Informational Toasts: Preventing duplicate items from being added.
+
+# important links:
+repo link - https://github.com/raidibney/ASSIGNMENT-6
+project live link - digitoolsprooweb.netlify.app
