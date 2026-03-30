@@ -42,7 +42,7 @@ const Navbar = ({ cartCount }) => {
                         </span>
                     )}
                 </div>
-    <a className='mr-7 text-black'>Login</a>
+    <a className='hidden md:block mr-7 text-black cursor-pointer'>Login</a>
     <a className="btn btn-primary text-white rounded-3xl ">Get Started</a>
   </div>
 </div>
