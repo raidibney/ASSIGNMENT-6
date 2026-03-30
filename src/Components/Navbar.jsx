@@ -3,7 +3,7 @@ import cartImage from '../assets/products/shopping-cart.png';
 
 const Navbar = ({ cartCount }) => {
     return (
-       <div className="navbar  shadow-sm w-11/12 mx-auto bg-white">
+       <div className="navbar sticky top-0 z-50 shadow-sm w-11/12 mx-auto bg-white">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

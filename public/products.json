@@ -42,5 +42,60 @@
     "tagType": "error",
     "features": ["Keyword tracking", "Backlink audit", "Competitor analysis"],
     "icon": "🚀"
+  },
+  {
+    "id": 5,
+    "name": "Video Editor Cloud",
+    "description": "Edit professional videos directly in your browser with cloud storage.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "info",
+    "features": ["4K Export support", "100GB Cloud storage", "Team collaboration"],
+    "icon": "🎬"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Manager",
+    "description": "Schedule posts and analyze performance across all platforms.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "success",
+    "features": ["Auto-scheduling", "Analytics dashboard", "Unlimited accounts"],
+    "icon": "📱"
+  },
+  {
+    "id": 7,
+    "name": "Icon Set Ultimate",
+    "description": "Over 5000+ vector icons for web and mobile app development.",
+    "price": 35,
+    "period": "one-time",
+    "tag": "Sale",
+    "tagType": "warning",
+    "features": ["SVG & PNG formats", "Lifetime updates", "Commercial rights"],
+    "icon": "💎"
+  },
+  {
+    "id": 8,
+    "name": "Email Marketing Kit",
+    "description": "High-converting email templates for your next big campaign.",
+    "price": 22,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "info",
+    "features": ["Drag-and-drop editor", "A/B testing", "Contact segmentation"],
+    "icon": "📧"
+  },
+  {
+    "id": 9,
+    "name": "Code Snippet Library",
+    "description": "A collection of 1000+ reusable code snippets for developers.",
+    "price": 45,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "warning",
+    "features": ["React & Vue support", "Dark mode UI", "VS Code extension"],
+    "icon": "💻"
   }
 ]

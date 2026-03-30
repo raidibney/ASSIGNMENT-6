@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import carticon from '../assets/products/shopping-cart.png';
 
 const Premiumtools = ({ cart, addToCart, removeFromCart, clearCart }) => {
     const [products, setProducts] = useState([]);
@@ -47,16 +48,47 @@ const Premiumtools = ({ cart, addToCart, removeFromCart, clearCart }) => {
                         {products.map(product => (
                             <div key={product.id} className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col relative">
                                 <span className="absolute top-4 right-4 badge badge-info font-bold">{product.tag}</span>
+                                {/* Icon and Header */}
                                 <div className="text-4xl mb-4">{product.icon}</div>
                                 <h3 className="text-xl font-bold text-black mb-2">{product.name}</h3>
                                 <p className="text-gray-500 text-sm mb-4 flex-grow">{product.description}</p>
+                                {/* Pricing */}
                                 <div className="mb-6">
                                     <span className="text-3xl font-bold text-black">${product.price}</span>
+                                    
                                     <span className="text-gray-400 text-sm">/{product.period}</span>
                                 </div>
+                                {/* Features List - Added logic to match your image */}
+            <ul className="space-y-3 mb-8 flex-grow">
+                {product.features.map((feature, index) => (
+                    <li key={index} className="flex items-center text-sm text-gray-600">
+                        {/* Checkmark Icon */}
+                        <svg 
+                            className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" 
+                            fill="none" 
+                            stroke="currentColor" 
+                            viewBox="0 0 24 24"
+                        >
+                            <path 
+                                strokeLinecap="round" 
+                                strokeLinejoin="round" 
+                                strokeWidth="3" 
+                                d="M5 13l4 4L19 7" 
+                            />
+                        </svg>
+                        {feature}
+                    </li>
+                ))}
+            </ul>
+                {/*buttons */}
                                 <button 
                                     onClick={() => addToCart(product)}
-                                    className="btn btn-primary w-full rounded-2xl text-white font-bold"
+                                    className={`btn w-full rounded-2xl text-white font-bold ${
+        cart.find(item => item.id === product.id) 
+        ? 'bg-green-500 hover:bg-green-600' 
+        : 'bg-blue-500 hover:bg-blue-600'
+                              }`}
+                                    
                                 >
                                     {cart.find(item => item.id === product.id) ? "Added to Cart" : "Buy Now"}
                                 </button>
@@ -66,10 +98,10 @@ const Premiumtools = ({ cart, addToCart, removeFromCart, clearCart }) => {
                 ) : (
                     /* Cart Section */
                     <div className="max-w-3xl mx-auto bg-white p-8 rounded-3xl shadow-lg">
-                        <h3 className="text-2xl font-bold mb-6">Your Cart</h3>
+                        <h3 className="text-2xl text-blue-700 font-bold mb-6">Your Cart</h3>
                         {cart.length === 0 ? (
                             <div className="text-center py-10">
-                                <p className="text-gray-400 text-lg">Your cart is empty</p>
+                                <p className="text-gray-400 text-lg"><img src={carticon }className="w-10 h-10 mx-auto"></img>Your cart is empty</p>
                             </div>
                         ) : (
                             <>
@@ -88,10 +120,11 @@ const Premiumtools = ({ cart, addToCart, removeFromCart, clearCart }) => {
                                     ))}
                                 </div>
                                 <div className="border-t pt-6 flex justify-between items-center mb-8">
-                                    <span className="text-xl font-bold">Total:</span>
+                                    <span className="text-xl font-bold text-blue-700">Total:</span>
                                     <span className="text-3xl font-extrabold text-black">${totalPrice}</span>
                                 </div>
-                                <button onClick={clearCart} className="btn btn-primary w-full py-4 text-white rounded-2xl text-lg shadow-xl">Proceed to Checkout</button>
+                                <button onClick={clearCart} className="btn btn-primary w-full py-4 text-white rounded-2xl text-lg shadow-xl">
+                                    Proceed to Checkout</button>
                             </>
                         )}
                     </div>

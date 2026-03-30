@@ -1,5 +1,7 @@
 import React from 'react';
 
+import instalogoo from '../assets/instalogo.png';
+import fblogo from '../assets/facebook.png';
 const Footer = () => {
     return (
       <footer className="bg-[#0B1221] text-white pt-20 pb-10  mx-auto w-11/12">
@@ -54,13 +56,13 @@ const Footer = () => {
                         <h4 className="text-lg font-semibold mb-6">Social Links</h4>
                         <div className="flex gap-3">
                             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black hover:bg-gray-200 cursor-pointer transition-colors">
-                                <i className="fab fa-instagram text-xl"></i> 
+                                <img src={instalogoo} className='rounded-3xl'></img>
                             </div>
                             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black hover:bg-gray-200 cursor-pointer transition-colors">
-                                <i className="fab fa-facebook-f text-xl"></i>
+                                <img src={fblogo} className='rounded-3xl'></img>
                             </div>
                             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black hover:bg-gray-200 cursor-pointer transition-colors">
-                                <span className="font-bold text-lg">X</span>
+                                <span className="font-bold text-lg">X</span> 
                             </div>
                         </div>
                     </div>
