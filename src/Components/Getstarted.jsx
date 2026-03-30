@@ -33,7 +33,7 @@ const Getstarted = () => {
     ];
 
     return (
-        <section className="bg-gray-100 py-24 px-4 relative overflow-hidden w-11/12 mx-auto">
+        <section className="bg-gray-100 py-16 md:py-24 px-4 relative overflow-hidden w-full lg:w-11/12 mx-auto">
             
             {/* Top part of the  Section */}
             <div className="text-center mb-16 relative">

@@ -19,7 +19,7 @@ const Premiumtools = ({ cart, addToCart, removeFromCart, clearCart }) => {
     const totalPrice = cart.reduce((total, item) => total + item.price, 0);
 
     return (
-        <section className="bg-gray-50 py-16 min-h-screen mx-auto w-11/12">
+        <section className="bg-gray-50 py-12 md:py-16 min-h-screen w-full lg:w-11/12 mx-auto px-4 md:px-0">
             <div className="w-11/12 mx-auto">
                 <div className="text-center mb-10">
                     <h2 className="text-4xl font-extrabold text-black mb-4">Premium Digital Tools</h2>

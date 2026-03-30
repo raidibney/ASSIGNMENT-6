@@ -2,7 +2,7 @@ import React from 'react';
 
 const Rating = () => {
     return (
-        <section className="bg-[#8B2CFF] py-12 px-4  w-11/12 mx-auto ">
+        <section className="bg-[#8B2CFF] py-16 px-6 w-full lg:w-11/12 mx-auto  shadow-xl ">
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-around text-white">
                 
                 {/* Active Users */}

@@ -29,7 +29,7 @@ const Transparentpricing = () => {
         }
     ];
     return (
-        <section className='bg-white py-20 w-11/12 mx-auto'>
+        <section className='bg-white py-16 md:py-24 w-full lg:w-11/12 mx-auto px-4 md:px-6'>
             {/* Header */}
             <div className='mb-16'>
                 <h1 className='text-3xl text-gray-900 text-center font-extrabold mb-4'>Simple, Transparent Pricing</h1>

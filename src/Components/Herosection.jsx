@@ -4,7 +4,7 @@ import banner from '../assets/banner.png';
 
 const Herosection = () => {
     return (
-        <div className="hero bg-white min-h-screen w-11/12 mx-auto">
+        <div className="hero bg-white min-h-[80vh] lg:min-h-screen w-full px-4 md:px-10 lg:w-11/12 mx-auto overflow-hidden" >
             {/* Added gap-20 for space and items-center to keep them vertically aligned */}
             <div className="hero-content flex-col lg:flex-row-reverse gap-20 items-center justify-between">
                 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Ready = () => {
     return (
-        <section className="bg-[#8B2CFF] py-24 px-4  text-center text-white w-11/12 mx-auto ">
+        <section className="bg-[#8B2CFF] py-16 md:py-24 px-6 text-center text-white w-full lg:w-11/12 mx-auto  shadow-2xl relative overflow-hidden ">
             <div className="max-w-4xl mx-auto">
                 {/* Heading */}
                 <h2 className="text-3xl font-bold mb-6">

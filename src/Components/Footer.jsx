@@ -4,7 +4,7 @@ import instalogoo from '../assets/instalogo.png';
 import fblogo from '../assets/facebook.png';
 const Footer = () => {
     return (
-      <footer className="bg-[#0B1221] text-white pt-20 pb-10  mx-auto w-11/12">
+      <footer className="bg-[#0B1221] text-white pt-16 md:pt-20 pb-10 w-full lg:w-11/12 mx-auto ">
             <div className="max-w-7xl mx-auto px-10"> 
             
                 <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-6 gap-8 mb-16">
